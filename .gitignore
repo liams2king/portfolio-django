@@ -1,0 +1,18 @@
+# Environnement virtuel
+env/
+
+# Fichiers compilés Python
+__pycache__/
+*.pyc
+
+# Base de données SQLite
+db.sqlite3
+
+# Fichiers/dossiers de production
+staticfiles/
+media/
+
+# Fichiers temporaires ou d'éditeurs
+.vscode/
+.idea/
+*.log

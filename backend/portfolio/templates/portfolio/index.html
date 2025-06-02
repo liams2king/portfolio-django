@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    <!-- boxicon css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    
+
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header style="height: 60px;">
+    <a href="#" class="logo"><span>M</span>r code</a>
+    <ul class="navlist" id="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li class="contact-link"><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="right-hearder">
+        <a href="#" class="btn">let,s chat <i class='bx bx-message-dots'></i></a>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    </header>
+
+    <section class="home" id="home">
+    <div class="home-content">
+        <div class="hero-info">
+            <h3>Bienvenu dans mon monde</h3>
+            <h1>je suis william</h1>
+        </div>
+
+        <div class="text-animate">
+            <h2>Développeur Full Stack et Analyste de Données, passionné, créatif et toujours curieux.</h2>
+        </div>
+
+        <p>
+            Je conçois des solutions web modernes et performantes, tout en explorant la puissance des données pour éclairer les décisions.
+            Du front-end esthétique à l’arrière-plan robuste, en passant par l’analyse de données pertinentes, j’aime donner vie aux idées à travers le code et l’intelligence des chiffres.
+            Explore mon univers et découvrons comment transformer vos projets en réalités numériques efficaces et intelligentes.
+        </p>
+
+        <div class="btn-box">
+            <a href="mailto:nguewa237@icloud.com" class="btn">Engagez-moi maintenant! <i class='bx bx-right-alt'></i></a>
+            <a href="chemin/vers/ton-cv.pdf" target="_blank" class="btn d-CV">télécharger <i class='bx bx-download'></i></a>
+        </div>
+
+        <div class="social-media">
+            <div class="bg-icon">
+                <span></span>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                
+            </div>
+            <div class="bg-icon">
+                <span></span>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                
+            </div>
+            <div class="bg-icon">
+                <span></span>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                
+            </div>
+            <div class="bg-icon">
+                <span></span>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="img-hero">
+    <img src="{% static 'portfolio/images/william1.png' %}" alt="William photo">
+
+        
+    </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+        <img src="{% static 'portfolio/images/aboutMe.jpg' %}" alt="" class="aboutHero">
+
+            <div class="circle-container">
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+        <div class="about-content">
+                <h2 class="heading"> A mon propos</h2>
+                <h3>En cours de formation, je progresse chaque
+                 jour avec rigueur et passion. Mon objectif 
+                 est clair : apporter de la valeur dès mes 
+                 premières missions.</h3>
+                <p>Même si je n’ai pas encore d’expérience professionnelle
+                    dans le domaine, je m’investis pleinement dans ma formation 
+                    en développement Full Stack et en Data Analysis. Chaque jour,
+                    je progresse avec passion, curiosité et détermination.
+                    J’ai déjà mené plusieurs projets personnels qui m'ont
+                    permis d'explorer les outils et les bonnes pratiques du métier.
+                    Mon objectif est clair : mettre mes compétences au service 
+                    de projets concrets, apprendre au contact du terrain, et évoluer rapidement.
+                    Je suis convaincu que la motivation, la discipline et l’envie de bien faire
+                    sont aussi précieuses que l’expérience.</p>
+                <div class="about-btn">
+                    <button class="active">Compétences principales</button>
+                    <button>récompenses</button>
+                    <button>Education</button>
+                </div>
+                <div class="content-btn">
+                    <div class="content">
+                        <!-- Développeur Full-Stack -->
+                        <div class="box-text">
+                            <h3>Développeur Full-Stack</h3>
+                            <p>
+                            Je conçois des applications web de A à Z, du design à la base de données. Je travaille aussi bien sur le front-end (interfaces modernes et réactives) que sur le back-end (logique métier, API, sécurité). Je m’assure que chaque projet soit beau, fonctionnel et robuste.
+                            </p>
+                            <ul>
+                            <li>Front-End : HTML, CSS, JavaScript, React</li>
+                            <li>Back-End : Node.js, Express, MongoDB, MySQL</li>
+                            <li>Déploiement, sécurité, maintenance</li>
+                            </ul>
+                        </div>
+                         <!-- Data Analyst -->
+                        <div class="box-text">
+                            <h3>Data Analyst</h3>
+                            <p>
+                            J’analyse les données pour en tirer des informations utiles et guider les décisions. De la collecte au tableau de bord, j’utilise les bons outils pour transformer les chiffres en solutions compréhensibles et stratégiques.
+                            </p>
+                            <ul>
+                            <li>Nettoyage et traitement de données</li>
+                            <li>Analyse avec Python, Pandas, SQL</li>
+                            <li>Visualisation avec Power BI, Tableau</li>
+                            </ul>
+                        </div>
+                        <div class="text-box">
+                            <p>Meilleur Projet Étudiant</p>
+                            <span>Récompensé pour une application web complète lors d’un hackathon en 2025.</span>
+                        </div>
+
+                        <div class="text-box">
+                            <p>Top Performer en Data Analysis</p>
+                            <span>Distinction obtenue lors de la formation grâce à un projet d’analyse de données avancé.</span>
+                        </div>
+                        <div class="text-box">
+                            <p>Formation Développeur Full-Stack & IA</p>
+                            <span>Centre de formation professionnel LocalHost Academy   - Mars 2025 à présent.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cvContent">
+                   <a href="je vais telecharger  la photo de mon cv" target="_blank" class="btn d-CV">télécharger CV <i class='bx bx-download'></i></a>
+                </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">Mes services</h2>
+            <span>Ce que je peux faire pour vous : </span>
+        </div>
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer'></i>
+                    <span></span>
+                </div>
+                <h3>Développement d'applications</h3>
+                <p>Création de sites vitrines, blogs ou applications web dynamiques sur mesure (HTML, CSS, JavaScript, React, Node.js).</p>
+                <a href="#" class="readMore"> En savoir plus</a>
+            </div>
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-block'></i>
+                    <span></span>
+                </div>
+                <h3>Applications Responsives</h3>
+                <p>Design et développement d’interfaces qui s’adaptent à tous les écrans (ordinateur, tablette, mobile).</p>
+                <a href="#" class="readMore"> En savoir plus</a>
+            </div>
+             <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-mobile-alt'></i>
+                    <span></span>
+                </div>
+                <h3>Analyse de Données</h3>
+                <p>Collecte, traitement et visualisation de données pour prendre de meilleures décisions (Python, Excel, Power BI).</p>
+                <a href="#" class="readMore"> En savoir plus</a>
+            </div>
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-bar-chart-alt-2'></i>
+                    <span></span>
+                </div>
+                <h3>Tableaux de Bord Dynamiques</h3>
+                <p>Création de dashboards interactifs pour suivre vos performances en temps réel.</p>
+                <a href="#" class="readMore"> En savoir plus</a>
+            </div>
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-paint'></i>
+                    <span></span>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Conception d’interfaces modernes, fluides et centrées utilisateur pour une meilleure expérience.</p>
+                <a href="#" class="readMore"> En savoir plus</a>
+            </div>
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-bolt-circle'></i>
+                    <span></span>
+                </div>
+                <h3>Optimisation de Performance</h3>
+                <p>Amélioration de la rapidité, de la sécurité et de l’accessibilité de vos sites web.</p>
+                <a href="#" class="readMore"> En savoir plus</a>
+            </div>
+        </div>
+
+        <div class="proposal">
+            <div class="text-box">
+                <span>Contactez</span>
+                <h3>Avez-vous un projet en tete?</h3>
+                <a href="#contact" class="btn">Contactez-moi</a>
+            </div>
+            <img src="{% static 'images/aboutMe.jpg' %}" alt="Ifirst">
+        </div>
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">Mes services</h2>
+            <span>Ce que je peux faire pour vous</span>
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">Tous les travaux</button>
+            <button class="button" data-filter=".frontend">Développement Web</button>
+            <button class="button" data-filter=".uiux">UI/UX Design</button>
+            <button class="button" data-filter=".perf">Optimisation de Performance</button>
+            <button class="button" data-filter=".frontend">Applications Responsives</button>
+            <button class="button" data-filter=".data">Analyse de Données</button>
+            <button class="button" data-filter=".data">Tableaux de Bord Dynamiques</button>
+
+        </div>
+
+        <div class="portfolio-gallery">
+        <!-- UI/UX Design -->
+        <div class="portfolio-box mix uiux">
+            <div class="portfolio-content">
+            <h3>Design Interface Web</h3>
+            <p>Maquette moderne et intuitive d’un site vitrine pour une marque de mode.</p>
+            <a href="#" class="readMore">Explorer davantage</a>
+            </div>
+            <div class="portfolio-img">
+               <img src="{% static 'portfolio/images/Design_Interface.jpg' %}" alt="">
+            </div>
+        </div>
+
+        <!-- Développement Front-End -->
+        <div class="portfolio-box mix frontend">
+            <div class="portfolio-content">
+            <h3>Application Responsive</h3>
+            <p>Site responsive pour restaurant avec menu interactif, fait en HTML, CSS et JavaScript.</p>
+            <a href="#" class="readMore">explorer D'avantage</a>
+            </div>
+            <div class="portfolio-img">
+               <img src="{% static 'portfolio/images/ApplicationResponsive.jpg' %}" alt="">
+            </div>
+        </div>
+
+        <!-- Développement Full-Stack -->
+        <div class="portfolio-box mix fullstack">
+            <div class="portfolio-content">
+            <h3>Pause Signature Manager</h3>
+            <p>Application de gestion de café : commandes via QR code, stock, admin panel, tableau de bord.</p>
+            <a href="#" class="readMore">explorer D'avantage</a>
+            </div>
+            <div class="portfolio-img">
+               <img src="{% static 'portfolio/images/appQRcode.jpg' %}" alt="">
+            </div>
+        </div>
+
+        <!-- Analyse de Données -->
+        <div class="portfolio-box mix data">
+            <div class="portfolio-content">
+            <h3>Tableau de Bord de Ventes</h3>
+            <p>Analyse visuelle des ventes hebdomadaires avec graphiques interactifs (Python, Pandas, Plotly).</p>
+            <a href="#" class="readMore">explorer D'avantage</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="{% static 'portfolio/images/AnalyseDonnées.jpg' %}" alt="">
+            </div>
+        </div>
+
+        <!-- Optimisation Performance -->
+        <div class="portfolio-box mix perf">
+            <div class="portfolio-content">
+            <h3>Optimisation d’un site e-commerce</h3>
+            <p>Réduction du temps de chargement et amélioration du score Lighthouse de 40 %.</p>
+             <a href="#" class="readMore">explorer D'avantage</a>
+            </div>
+        </div>
+
+        <!-- UI/UX + Dév -->
+        <div class="portfolio-box mix uiux fullstack">
+            <div class="portfolio-content">
+            <h3>Portfolio Personnel</h3>
+            <p>Site complet pour présenter mes compétences, services et projets, avec une touche de design unique.</p>
+             <a href="#" class="readMore">explorer D'avantage</a>
+            </div>
+        </div>
+        <!-- projet dynamique avec django -->
+        {% for project in projects %}
+        <div class="portfolio-box mix {{ project.category }}">
+            <div class="portfolio-content">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                {% if project.url %}
+        <a href="{{ project.url }}" class="readMore" target="_blank">Explorer davantage</a>
+                {% endif %}
+        </div>
+        {% if project.image %}
+        <div class="portfolio-img">
+        <img src="{{ project.image.url }}" alt="{{ project.title }}">
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+    </div>
+
+
+    </section>
+
+
+    <section class="blog" id="blog">
+        <div class="main-text">
+        <h2 class="heading">Blog</h2>
+        <span>Dernières Nouvelles & Post</span>    
+        </div>
+
+        <div class="blog-box swiper mySwiper">
+            <div class="cards swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                       <img src="{% static 'portfolio/images/pause_signature.jpg' %}" alt="">
+                    </div>
+                     <div class="card-info">
+                        <h2>Pause Signature App</h2>
+                        <span class="date">Lundi, Mai 12, 2025</span>
+                        <p class="excerpt">Application de gestion de micro-restaurant avec commande via QR code et tableau de bord admin.</p>
+                        <a href="#" class="readMore">explorer D'avantage</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="{% static 'portfolio/images/pause_signature.jpg' %}" alt="">
+                    </div>
+                     <div class="card-info">
+                        <h2>Pause Signature App</h2>
+                        <span class="date">Monday, May 12, 2025</span>
+                        <p class="excerpt">Application de gestion de micro-restaurant avec commande via QR code et tableau de bord admin.</p>
+                        <a href="#" class="readMore">explorer D'avantage</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                       <img src="{% static 'portfolio/images/pause_signature.jpg' %}" alt="">
+                    </div>
+                     <div class="card-info">
+                        <h2>Pause Signature App</h2>
+                        <span class="date">Monday, May 12, 2025</span>
+                        <p class="excerpt">Application de gestion de micro-restaurant avec commande via QR code et tableau de bord admin.</p>
+                        <a href="#" class="readMore">explorer D'avantage</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="{% static 'portfolio/images/pause_signature.jpg' %}" alt="">
+                    </div>
+                     <div class="card-info">
+                        <h2>Pause Signature App</h2>
+                        <span class="date">Monday, May 12, 2025</span>
+                        <p class="excerpt">Application de gestion de micro-restaurant avec commande via QR code et tableau de bord admin.</p>
+                        <a href="#" class="readMore">explorer D'avantage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </section>
+
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Contactez moi</h2>
+                    <span>Contactez-moi</span>
+                </div>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="#" id="" cols="30" rows="10">
+                    </textarea>
+                    <div class="formBtn">
+                        <button type="submit" class="btn">Envoyer  un messsage</button>
+                    </div>
+                </form>
+            </div>
+            <div class="skills">
+                <div class="container">
+                    <div class="skillBox">
+                        <div class="main-text">
+                            <h2 class="heading">Mes Compétences </h2>
+                            <span>Laissez-moi vous aider</span>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round"  />
+                                        </svg>
+                                        <h2 class="counter">
+                                            <span data-target="89">0</span>%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    HTML
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="roundc" />
+                                        </svg>
+                                        <h2 class="counter">
+                                            <span data-target="47">0</span>%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    CSS
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                        </svg>
+                                        <h2 class="counter">
+                                            <span data-target="56">0</span>%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    JavaScript
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                    <stop offset="0%" stop-color="#e91e63"/>
+                                                    <stop offset="100%" stop-color="#673ab7"/>
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                        </svg>
+                                        <h2 class="counter">
+                                        <span data-target="05">0</span>%
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    UI/UX Design
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>Copyright © 2025 by <span>MrCode</span> || All Rights Reserved.</p>
+    </footer>
+
+        <!-- La roue de progression circulaire -->
+    <div id="progress-container">
+    <svg id="progress-ring" width="50" height="50">
+        <circle id="progress-bg" cx="25" cy="25" r="20" stroke="#eee" stroke-width="5" fill="none"/>
+        <circle id="progress-bar" cx="25" cy="25" r="20" stroke="#007bff" stroke-width="5" fill="none" stroke-dasharray="126" stroke-dashoffset="126"/>
+    </svg>
+    </div>
+
+    <!-- Le bouton "remonter en haut" -->
+    <div id="progress" title="Remonter en haut">
+        <span id="progress-value">
+            <i class="bx bxs-chevrons-up"></i>
+        </span>
+    </div>
+
+
+
+
+
+    <!--scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="{% static 'portfolio/js/script.js' %}"></script>
+</body>
+</html>
